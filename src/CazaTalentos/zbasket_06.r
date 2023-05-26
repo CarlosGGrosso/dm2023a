@@ -1,6 +1,6 @@
 
 
-set.seed( 102191 )
+set.seed( 324161 )
 
 #calcula cuantos encestes logra un jugador con indice de enceste prob
 #que hace qyt tiros libres
