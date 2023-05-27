@@ -31,7 +31,7 @@ options(error = function() {
 
 #Parametros del script
 PARAM  <- list()
-PARAM$experimento  <- "HT6510v05" # NOMBRE EXPERIMENTO SALIDA
+PARAM$experimento  <- "HT6510v07" # NOMBRE EXPERIMENTO SALIDA
 
 PARAM$exp_input  <- "TS6410"
 
@@ -58,11 +58,11 @@ PARAM$lgb_basicos <- list(
    max_bin= 31L,                   #lo debo dejar fijo, no participa de la BO
    num_iterations= 9999,           #un numero muy grande, lo limita early_stopping_rounds
 
-   bagging_fraction= 0.5,          # 0.0 < bagging_fraction <= 1.0
-   pos_bagging_fraction= 0.5,      # 0.0 < pos_bagging_fraction <= 1.0
-   neg_bagging_fraction= 0.5,      # 0.0 < neg_bagging_fraction <= 1.0
+   bagging_fraction= 1.0,          # 0.0 < bagging_fraction <= 1.0
+   pos_bagging_fraction= 1.0,      # 0.0 < pos_bagging_fraction <= 1.0
+   neg_bagging_fraction= 1.0,      # 0.0 < neg_bagging_fraction <= 1.0
    is_unbalance=  TRUE,           #
-   scale_pos_weight= 0.0,          # scale_pos_weight > 0.0
+   scale_pos_weight= 99.0,          # scale_pos_weight > 0.0
 
    drop_rate=  0.1,                # 0.0 < neg_bagging_fraction <= 1.0
    max_drop= 50,                   # <=0 means no limit
