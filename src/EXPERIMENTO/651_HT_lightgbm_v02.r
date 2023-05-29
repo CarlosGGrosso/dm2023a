@@ -84,7 +84,7 @@ PARAM$bo_lgb <- makeParamSet(
         # makeNumericParam("bagging_fraction",     lower= 0.0, upper= 1.0),    # 0.0 < bagging_fraction <= 1.0
         # makeNumericParam("pos_bagging_fraction", lower= 0.0, upper= 1.0),   # 0.0 < pos_bagging_fraction <= 1.0
         # makeNumericParam("neg_bagging_fraction", lower= 0.0, upper= 1.0),     # 0.0 < neg_bagging_fraction <= 1.0
-         makeIntegerParam("scale_pos_weight",     lower= 0.0,  upper= 150.0),      # scale_pos_weight > 0.0
+         makeIntegerParam("scale_pos_weight",     lower= 0.0,  upper= 30.0),      # scale_pos_weight > 0.0
          )
 
 
